@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>3.1 step - forms</title>
+    </head>
+    <body>
+        <form>
+            <section>
+                <label for="имя пользователя">Имя пользователя(только латинские буквы и цифры)</label>
+                <input type="text" name="имя пользователя" id="имя пользователя" minlength="4" maxlength="10" required pattern="[a-zA-Z0-9]{4,10}">
+            </section>
+            <br>
+            <section>
+                <label for="пароль">ПАРОЛЬ(цифры)</label>
+                <input type="password" id="пароль" minlength="6" maxlength="10" required pattern="[0-9]{6,10}">
+            </section>
+            <br>
+            <section>
+                <input type="submit" value="готово">
+            </section>
+        </form>
+    </body>
+</html>
