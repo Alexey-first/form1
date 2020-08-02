@@ -7,15 +7,27 @@
     <body>
         <form>
             <section>
-                <label for="имя пользователя">Имя пользователя(только латинские буквы и цифры)</label>
+                <label for="имя пользователя">Имя пользователя(только латинские буквы и цифры):</label>
                 <input type="text" name="имя пользователя" id="имя пользователя" minlength="4" maxlength="10" required pattern="[a-zA-Z0-9]{4,10}">
             </section>
             <br>
             <section>
-                <label for="пароль">ПАРОЛЬ(цифры)</label>
+                <label for="пароль">ПАРОЛЬ(цифры):</label>
                 <input type="password" id="пароль" minlength="6" maxlength="10" required pattern="[0-9]{6,10}">
             </section>
             <br>
+            <section>
+                <label for="количество">Количество:</label>
+                <input type="number" name="количество" id="количество" step="1" min="1" max="10" required>
+            </section>                
+            <br>
+            <section>
+                <label for="уровень">Желаемый уровень:</label>
+                <span>от 0</span>
+                <input type="range" min="0" max="10" step="1" id="уровень" name="уровень">
+                <span>до 10</span>
+            </section> 
+            <br>     
             <section>
                 <input type="submit" value="готово">
             </section>
